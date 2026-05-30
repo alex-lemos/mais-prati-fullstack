@@ -45,6 +45,14 @@ class Pilha {
         return this.itens.pop()
     }
 
+    // Método para ver o elemento do topo da pilha
+    peek() {
+        if (this.isEmpty()) {
+            return "A pilha está vazia"
+        }
+        return this.itens[this.itens.length - 1]
+    }
+
     // Método para ver a pilha completa
     print() {
         console.log(this.itens)
